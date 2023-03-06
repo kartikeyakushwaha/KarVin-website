@@ -6,21 +6,21 @@ NOTES=[{
   'id':1,
   'Subject':'Mathematics',
 'Topics':'Linear_Equation_in_two_variable',
-  'link':'http',
+  'link':'https://docs.google.com/presentation/d/1ReeT1l0DwpjtLfJKscTUCP2WpawG_uqCfWC-k4sidEA/edit?usp=share_link',
   'Board':'CBSE'
 },
        {
   'id':2,
   'Subject':'Mathematics',
 'Topics':'Polynomials',
-  'link':'http',
+  'link':'https://drive.google.com/file/d/14DxFK-hSUnlBGea_llWyqm-MrIXMBHTC/view?usp=share_link',
   'Board':'CBSE'
 },
        {
   'id':3,
   'Subject':'Science',
 'Topics':'Electricity',
-  'link':'http',
+  'link':'https://docs.google.com/presentation/d/1BoT_sbplWiqh7M0A5idB2K1pSkSjAYOCpVPPkq--Kb4/edit?usp=share_link',
   'Board':'CBSE'
 }
   
