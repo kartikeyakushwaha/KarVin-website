@@ -22,4 +22,15 @@ def load_notes_from_db():
   for row in result.all():
     note.append(row._mapping)
   return note
-  
+
+
+def load_note_from_db(id):
+  with engine.connect() as conn:
+    query="SELECT * FROM notes WHERE id = {}".format(id)
+    result =conn.execute(text(query))
+
+  rows=result.all()
+  if len(rows)==0:
+      return None
+  else:
+    return (rows[0]._mapping)

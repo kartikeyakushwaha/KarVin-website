@@ -1,0 +1,41 @@
+ <!doctype html>
+ <html>
+   <head>
+     <title>
+       {{notes.topic}}
+     </title>
+      {%include 'bootstrap.html'%}
+   </head>
+   <body>
+   {%include 'nav.html'%}
+     
+    <br>
+     <img src="https://KarVin-website-1.kartikeyakushwa.repl.co/static/notesbanner.jpg" class="img-fluid" alt="..." id="banner">
+
+     
+     <br><br>
+<div>
+   <a href="https://www.youtube.com/@kartikeyakushwaha9762" target="_blank" style="margin-left:150px"> 
+     <button class="btn btn-outline-danger">
+      Join us on YouTube
+   </button >
+   </a>
+     
+   <a href="#" target="_blank"> 
+     <button class="btn btn-outline-info" style="margin-left:750px">
+      Join us on Telegram
+   </button >
+   </a>
+</div>
+     
+    <br>
+     <br>
+     <h3>
+      {{notes.subjects}}
+     </h3>
+      <h3>Topic-<u>{{notes.topic}}</u></h3>
+
+     
+     {%include 'footer.html'%}
+   </body>
+ </html>
