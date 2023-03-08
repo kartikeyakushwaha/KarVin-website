@@ -1,26 +1,31 @@
- 
-       
+ <html>
+   <head>
+     
+   </head>
+       <body>
         <div class="border-bottom row"  style="margin-bottom:16px; padding:25px;">
         <div class="col-9"> 
-          <h4 style="color:rgb(120,120,120);margin-bottom:" 20px"> {{note['Subject']}}
+          <h4 style="color:rgb(120,120,120);margin-bottom:" 20px"> {{note['subjects']}}
          </h4>
           
           <div>
             <b>Topics:</b>
-            {{note['Topics']}}
+            {{note['topic']}}
           </div>
        
       <div>
-        <b>Board:</b>{{note['Board']}}
+        <b>Board:</b>{{note['boards']}}
       </div>
       </div>
     
 
 <div class="col-3">
  <a href="{{note['link']}}" target="_blank"><button class="btn btn-outline-info">
-            Download 
+            Explore Courses
   </button>
  </a>
 </div>
 
         </div>
+       </body>
+ </html>
