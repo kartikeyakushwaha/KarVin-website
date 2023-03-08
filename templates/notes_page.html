@@ -30,10 +30,34 @@
      
     <br>
      <br>
-     <h3>
+     <h3 style="margin-left:30px">
       {{notes.subjects}}
      </h3>
-      <h3>Topic-<u>{{notes.topic}}</u></h3>
+      <h3 style="margin-left:30px">Topic-<u>{{notes.topic}}</u></h3>
+     <br><br>
+
+<!------->
+
+
+    
+     <div style="margin-left:300px">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_Vn2dhhlK70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+    
+<!-- After the embedded vedio link -->
+     <div>
+   <a href="{{notes.playlistlink}}" target="_blank" style="margin-left:300px"> 
+     <button class="btn btn-outline-danger">
+      Playlist
+   </button >
+   </a>
+     
+   <a href="{{notes.link}}" target="_blank"> 
+     <button class="btn btn-outline-info" style="margin-left:590px">
+      Download Notes
+   </button >
+   </a>
+</div>
 
      
      {%include 'footer.html'%}
