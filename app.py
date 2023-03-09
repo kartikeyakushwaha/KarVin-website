@@ -1,5 +1,7 @@
-from flask import Flask ,render_template,jsonify
+from flask import Flask ,render_template
 from database import load_notes_from_db,load_note_from_db
+
+
 
 app=Flask(__name__)
 
@@ -19,7 +21,8 @@ def show_note(id):
   if not note:
     return "Not Found",404
   return render_template('notes_page.html', notes=note)
-  
+
+
 
 
 if __name__=="__main__":

@@ -1,5 +1,8 @@
 from sqlalchemy import create_engine,text
 import os
+from IPython.display import YouTubeVideo
+
+YouTubeVideo('1j_HxD4iLn8')
 
 db_connection_string=os.environ['DB_CONNECTION_STRING']
 
@@ -28,9 +31,10 @@ def load_note_from_db(id):
   with engine.connect() as conn:
     query="SELECT * FROM notes WHERE id = {}".format(id)
     result =conn.execute(text(query))
-
+    
   rows=result.all()
   if len(rows)==0:
       return None
   else:
     return (rows[0]._mapping)
+#---------------------------------------------
