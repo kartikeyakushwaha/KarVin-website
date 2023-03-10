@@ -1,10 +1,50 @@
  <!doctype html>
  <html>
    <head>
+     
      <title>
        {{notes.topic}}
      </title>
       {%include 'bootstrap.html'%}
+<!----------------------------------------------->
+<Style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title1 {
+  color: grey;
+  font-size: 18px;
+}
+
+#card {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+card:hover, a:hover {
+  opacity: 0.7;
+}
+      
+</Style>
+
+
+
+
+ <!------------------------------------------->    
    </head>
    <body>
    {%include 'nav.html'%}
@@ -16,14 +56,14 @@
      
      <br><br>
 <div>
-   <a href="https://www.youtube.com/@kartikeyakushwaha9762" target="_blank" style="margin-left:150px"> 
+   <a href="https://www.youtube.com/@kartikeyakushwaha9762" target="_blank" style="margin-left:300px"> 
      <button class="btn btn-outline-danger">
       Join us on YouTube
    </button >
    </a>
      
    <a href="#" target="_blank"> 
-     <button class="btn btn-outline-info" style="margin-left:750px">
+     <button class="btn btn-outline-info" style="margin-left:500px">
       Join us on Telegram
    </button >
    </a>
@@ -31,34 +71,53 @@
      
     <br>
      <br>
-     <h3 style="margin-left:30px">
+    <center> <h3 style="margin-left:30px">
       {{notes.subjects}}
      </h3>
       <h3 style="margin-left:30px">Topic-<u>{{notes.topic}}</u></h3>
      <br><br>
+    </center>
+<!--------------------------------------------------->
+<div class="class="grid text-center" style="--bs-columns: 4; --bs-gap: 5rem;"">
 
-<!------->
- <div class="p-3 mb-2 bg-info-subtle text-emphasis-info.text-primary p-3 mb-2 bg-info-subtle text-emphasis-info container" style="background-color:skyblue  padding:0 " > 
-     
-<p class="lead">
-  {{notes.intro}}
-</p>
-</div>
-    
-<!-- After the embedded vedio link -->
-     <div>
-   <a href="{{notes.playlistlink}}" target="_blank" style="margin-left:300px"> 
+  <div class="g-col-2">
+  <div class="card ">
+ 
+  <h1>Vedio Lecture</h1>
+  <p class="title1">powered by </p>
+  <p>Vinayak classes</p>
+ <p>
+  <a href="{{notes.playlistlink}}" target="_blank" > 
      <button class="btn btn-outline-danger">
       Playlist
-   </button >
-   </a>
-     
-   <a href="{{notes.link}}" target="_blank"> 
-     <button class="btn btn-outline-info" style="margin-left:590px">
-      Download Notes
-   </button >
-   </a>
+   </button ></a></p>
 </div>
+  </div>
+<br><br><br>
+<div class="g-col-2">
+  <div class="card ">
+ 
+  <h1>Notes</h1>
+  <p class="title1">powered by </p>
+  <p>Vinayak classes</p>
+ <p>
+  <a href="{{notes.link}}" target="_blank" > 
+     <button class="btn btn-outline-info">
+    Download Notes
+   </button ></p>
+</div>
+  </div>
+    </div>
+<!-- After the embedded vedio link ----->
+
+
+
+
+
+
+
+     
+     
 
      
      {%include 'footer.html'%}
