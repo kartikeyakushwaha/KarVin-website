@@ -13,18 +13,21 @@
   max-width: 300px;
   margin: auto;
   text-align: center;
+  border-radius:30px;
+  background-color:#E3DFFD;
 }
 
 .title1 {
   color: grey;
   font-size: 18px;
+
 }
 
 #card {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -35,9 +38,10 @@
 
 
 
-card:hover, a:hover {
-  opacity: 0.7;
-}
+
+  #page{
+    background-color:#ECF2FF;
+  }
       
 </Style>
 
@@ -46,7 +50,7 @@ card:hover, a:hover {
 
  <!------------------------------------------->    
    </head>
-   <body>
+   <body id="page">
    {%include 'nav.html'%}
      <br><br>
      
@@ -62,7 +66,7 @@ card:hover, a:hover {
    </button >
    </a>
      
-   <a href="#" target="_blank"> 
+   <a href="https://t.me/learn_with_KK" target="_blank"> 
      <button class="btn btn-outline-info" style="margin-left:500px">
       Join us on Telegram
    </button >
@@ -83,7 +87,7 @@ card:hover, a:hover {
   <div class="g-col-2">
   <div class="card ">
  
-  <h1>Vedio Lecture</h1>
+ <h1>Video Lectures</h1>
   <p class="title1">powered by </p>
   <p>Vinayak classes</p>
  <p>
@@ -104,10 +108,28 @@ card:hover, a:hover {
   <a href="{{notes.link}}" target="_blank" > 
      <button class="btn btn-outline-info">
     Download Notes
-   </button ></p>
+   </button ></p></a>
 </div>
   </div>
     </div>
+
+
+ <br><br><br>
+<div class="g-col-2">
+  <div class="card ">
+ 
+  <h1>Quiz</h1>
+  <p class="title1">powered by </p>
+  <p>Vinayak classes</p>
+ <p>
+  <a href="{{notes.quiz}}" target="_blank" > 
+     <button class="btn btn-outline-success">
+       Quiz
+   </button ></p></a>
+</div>
+  </div>
+    </div>
+
 <!-- After the embedded vedio link ----->
 
 
